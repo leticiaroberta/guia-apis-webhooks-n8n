@@ -18,3 +18,28 @@ Durante o processo, busquei não apenas obter respostas da IA, mas entender os c
 - Relacionar esses conceitos com workflows do n8n.
 - Praticar Engenharia de Prompts.
 - Utilizar IA como ferramenta de apoio ao aprendizado.
+
+## 📚 Curadoria de Fontes
+
+Para construir este caderno temático no NotebookLM, foram selecionadas fontes abertas sobre APIs, Webhooks, integração entre sistemas e automação com n8n.
+
+A escolha combinou documentação e materiais didáticos em diferentes formatos, buscando comparar explicações e facilitar a compreensão dos conceitos.
+
+### Fontes utilizadas
+
+1. **Postman — What is an API?**  
+   Introdução aos conceitos fundamentais de APIs e comunicação entre aplicações.
+
+2. **Documentação oficial do n8n**  
+   Utilizada para relacionar os conceitos estudados com a criação de workflows e integrações no n8n.
+
+3. **Postman Learning Center — Getting Started**  
+   Material utilizado para compreender requisições, respostas e comunicação com APIs.
+
+4. **Vídeos complementares no YouTube**
+   - https://www.youtube.com/watch?v=GH6vvqpcbq
+   - https://www.youtube.com/watch?v=hYeQifquQ4o
+   - https://www.youtube.com/watch?v=g7K2qJsgQmA
+   - https://www.youtube.com/watch?v=DkV7ztrhLh8
+
+Os materiais foram adicionados ao NotebookLM para permitir consultas baseadas nas fontes selecionadas e apoiar a criação do miniguia.
