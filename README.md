@@ -162,3 +162,65 @@ De forma resumida:
 `Paciente → Webhook → JSON → API/GET → Horários → Escolha → API/POST → Agendamento`
 
 > Este exemplo é conceitual. A implementação real depende das APIs e integrações disponibilizadas pelos sistemas utilizados.
+
+## 📘 Glossário
+
+### API — Application Programming Interface
+Forma padronizada que permite a comunicação e troca de dados entre sistemas diferentes.
+
+**Exemplo:** o n8n consulta uma API para descobrir horários disponíveis em uma agenda.
+
+### Webhook
+Permite que um sistema envie dados ou uma notificação para outro quando determinado evento acontece.
+
+**Exemplo:** um formulário é enviado e um Webhook inicia um workflow no n8n.
+
+### JSON — JavaScript Object Notation
+Formato de texto utilizado para organizar e trocar dados entre sistemas.
+
+Exemplo:
+
+{
+  "paciente": "Lucas",
+  "procedimento": "Limpeza"
+}
+
+### HTTP Request
+Requisição enviada de um sistema para outro através do protocolo HTTP.
+
+No n8n, o node **HTTP Request** pode ser utilizado para realizar chamadas a APIs.
+
+### GET
+Método HTTP normalmente utilizado para consultar ou obter informações.
+
+**Exemplo:** buscar horários disponíveis.
+
+### POST
+Método HTTP frequentemente utilizado para enviar dados ou criar um novo recurso.
+
+**Exemplo:** enviar os dados necessários para criar um agendamento.
+
+### Endpoint
+Endereço específico disponibilizado por uma API para acessar determinado recurso ou executar uma operação.
+
+### Trigger
+Evento ou condição que inicia um workflow.
+
+**Exemplo:** um Schedule Trigger pode iniciar uma automação todos os dias às 08:00.
+
+### Node
+Cada bloco que executa uma determinada função dentro de um workflow do n8n.
+
+Os nodes podem receber dados, transformá-los, consultar APIs, enviar mensagens e executar outras ações.
+
+### API Key
+Credencial utilizada por muitas APIs para identificar ou autorizar uma aplicação que está fazendo uma requisição.
+
+> API Keys e outras credenciais não devem ser publicadas em repositórios.
+
+### Workflow
+Conjunto de nodes conectados que formam um processo automatizado.
+
+Exemplo:
+
+`Trigger → Consultar dados → Processar informações → Executar ação`
