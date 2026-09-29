@@ -102,3 +102,63 @@ Para verificar o aprendizado, testei situações como uma nova compra, consulta 
 Ao comparar as respostas, percebi que fornecer contexto, definir o meu nível de conhecimento, apresentar um cenário específico e indicar o formato desejado tornou a resposta da IA mais adequada ao meu objetivo.
 
 O processo mostrou que Engenharia de Prompts não significa apenas escrever instruções maiores, mas fornecer informações relevantes e claras para orientar melhor o resultado.
+
+## 📖 Miniguia de Estudo — APIs e Webhooks
+
+### 🔗 O que é uma API?
+
+API (Application Programming Interface) é uma forma padronizada de permitir que sistemas diferentes troquem informações e executem ações entre si.
+
+Uma maneira simples de imaginar uma API é pensar em um garçom:
+
+`Cliente → Garçom → Cozinha → Garçom → Cliente`
+
+Na automação:
+
+`n8n → API → Sistema externo → Resposta → n8n`
+
+Por exemplo, uma automação pode utilizar uma API para consultar os horários disponíveis na agenda de uma clínica.
+
+---
+
+### 🔔 O que é um Webhook?
+
+Webhook é uma forma de um sistema avisar outro automaticamente quando determinado evento acontece.
+
+Uma analogia simples é uma campainha: você não precisa verificar continuamente se alguém chegou. Quando alguém chega, a campainha toca.
+
+Exemplo:
+
+`Cliente envia formulário → Webhook → n8n inicia o workflow`
+
+---
+
+### 🔄 API x Webhook
+
+Uma forma simples que utilizei durante o aprendizado foi:
+
+- **API:** “Eu vou pedir, consultar ou enviar algo.”
+- **Webhook:** “Avise-me quando algo acontecer.”
+
+Em uma mesma automação, os dois podem trabalhar juntos.
+
+---
+
+### 🦷 Exemplo: agendamento em uma clínica
+
+Imagine que um paciente queira marcar uma limpeza:
+
+1. O paciente envia uma solicitação.
+2. Um **Webhook** recebe o evento e inicia a automação.
+3. Os dados do paciente podem ser recebidos em formato **JSON**.
+4. O n8n utiliza uma **API** para consultar a agenda.
+5. Uma requisição **GET** pode buscar os horários disponíveis.
+6. O paciente escolhe um horário.
+7. Uma requisição **POST** pode enviar os dados necessários para criar o agendamento.
+8. O fluxo continua com a confirmação da consulta.
+
+De forma resumida:
+
+`Paciente → Webhook → JSON → API/GET → Horários → Escolha → API/POST → Agendamento`
+
+> Este exemplo é conceitual. A implementação real depende das APIs e integrações disponibilizadas pelos sistemas utilizados.
