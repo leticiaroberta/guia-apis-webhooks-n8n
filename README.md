@@ -224,3 +224,33 @@ Conjunto de nodes conectados que formam um processo automatizado.
 Exemplo:
 
 `Trigger → Consultar dados → Processar informações → Executar ação`
+
+## ♻️ Prompts Reutilizáveis
+
+Durante o projeto, desenvolvi modelos de prompts que podem ser adaptados para estudar outros conceitos de automação no futuro.
+
+### 1. 📚 Aprender um conceito
+
+> Sou iniciante em automação e preciso compreender melhor como funciona **[CONCEITO]**. Explique de forma simples e de fácil compreensão, usando uma analogia do cotidiano e um exemplo prático de como esse conceito pode ser utilizado no n8n. Evite termos técnicos sem explicá-los.
+
+**Exemplos para [CONCEITO]:**
+`API`, `Webhook`, `JSON`, `Node`, `Trigger`
+
+---
+
+### 2. 🧠 Testar meus conhecimentos
+
+> Estou estudando **[CONCEITO]** e quero testar se realmente compreendi. Crie pequenos testes com perguntas simples e situações práticas relacionadas ao tema. Faça uma pergunta de cada vez e espere minha resposta antes de continuar. Depois de cada resposta, diga se acertei ou errei e explique o motivo de forma simples. Aumente gradualmente a dificuldade conforme eu for acertando.
+
+Esse prompt transforma a IA em uma ferramenta de revisão ativa, em vez de apenas fornecer novas explicações.
+
+---
+
+### 3. ⚙️ Aplicar em uma automação
+
+> Estou criando uma automação no n8n com o objetivo de **[OBJETIVO]**. Quero aplicar meus conhecimentos sobre **[CONCEITO]**. Ajude-me a pensar na construção desse workflow passo a passo, indicando quais etapas e nodes podem ser necessários e explicando a função de cada um de forma simples. Não entregue apenas a solução pronta: faça perguntas e dê dicas para que eu também consiga pensar na lógica da automação.
+
+**Exemplo:**
+
+- **[OBJETIVO]:** automatizar o fluxo de uma compra em uma loja online.
+- **[CONCEITO]:** APIs e Webhooks.
