@@ -43,3 +43,62 @@ A escolha combinou documentação e materiais didáticos em diferentes formatos,
    - https://www.youtube.com/watch?v=DkV7ztrhLh8
 
 Os materiais foram adicionados ao NotebookLM para permitir consultas baseadas nas fontes selecionadas e apoiar a criação do miniguia.
+
+## 🧪 Engenharia de Prompts e Cicatrizes
+
+Durante o estudo, utilizei diferentes prompts no NotebookLM e fui refinando as instruções conforme percebia limitações nas respostas ou novas necessidades de aprendizagem.
+
+### Prompt 1 — Compreendendo os conceitos básicos
+
+**Prompt utilizado:**
+
+> Sou iniciante em automação e ainda não entendo muito bem como funcionam APIs e Webhooks. Poderia me explicar de forma simples e com contexto do dia a dia como essas ferramentas funcionam e se comportam entre si?
+
+**Resultado:**
+
+A resposta apresentou os conceitos utilizando analogias simples. A API foi comparada ao garçom de um restaurante, responsável por levar solicitações e trazer respostas, enquanto o Webhook foi comparado a uma campainha que avisa quando determinado evento acontece.
+
+**Limitação identificada:**
+
+O primeiro prompt foi útil para compreender os conceitos separadamente, mas ainda queria entender melhor como APIs e Webhooks poderiam trabalhar juntos dentro de uma automação real.
+
+---
+
+### Prompt 2 — Aplicando em um cenário real
+
+Para melhorar o resultado, acrescentei mais contexto ao prompt e defini um cenário relacionado a uma clínica dentária.
+
+**Prompt utilizado:**
+
+> Sou iniciante no mundo da automação e ainda estou aprendendo como tudo funciona. Gostaria de entender de forma mais profunda como APIs e Webhooks trabalham e funcionam entre si.
+>
+> Vamos imaginar que estamos em uma clínica dentária e um paciente entra em contato querendo marcar uma limpeza. Como APIs e Webhooks poderiam participar desse processo, desde o primeiro contato do paciente até a consulta da agenda e escolha de uma data?
+>
+> Explique o processo passo a passo, usando linguagem simples, exemplos claros e analogias do cotidiano, como se estivesse explicando para um amigo. Sempre que utilizar um termo técnico novo, explique também o que ele significa.
+
+**Resultado:**
+
+A resposta passou de uma explicação conceitual para um fluxo completo de automação:
+
+`Paciente → Webhook → Dados em JSON → API/GET → Horários disponíveis → Escolha do paciente → API/POST → Agendamento`
+
+Além de API e Webhook, essa segunda tentativa introduziu conceitos como JSON, HTTP Request, GET, POST, Endpoint, Trigger e API Key.
+
+### 🩹 Cicatriz de aprendizagem
+
+Durante o estudo, inicialmente interpretei que o Webhook seria responsável por avisar ao sistema que havia chegado um pedido feito pela API.
+
+Ao testar essa interpretação com diferentes situações práticas, percebi que estava misturando os papéis das duas tecnologias.
+
+O modelo mental que passei a utilizar foi:
+
+- **API:** “Eu vou pedir, consultar ou enviar algo.”
+- **Webhook:** “Avise-me quando determinado evento acontecer.”
+
+Para verificar o aprendizado, testei situações como uma nova compra, consulta de frete e notificação de entrega. Isso ajudou a corrigir a interpretação inicial e consolidar a diferença entre os dois conceitos.
+
+### 💡 Principal aprendizado sobre prompts
+
+Ao comparar as respostas, percebi que fornecer contexto, definir o meu nível de conhecimento, apresentar um cenário específico e indicar o formato desejado tornou a resposta da IA mais adequada ao meu objetivo.
+
+O processo mostrou que Engenharia de Prompts não significa apenas escrever instruções maiores, mas fornecer informações relevantes e claras para orientar melhor o resultado.
