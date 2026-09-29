@@ -25,24 +25,22 @@ Para construir este caderno temático no NotebookLM, foram selecionadas fontes a
 
 A escolha combinou documentação e materiais didáticos em diferentes formatos, buscando comparar explicações e facilitar a compreensão dos conceitos.
 
-### Fontes utilizadas
+### Fontes principais utilizadas
 
-1. **Postman — What is an API?**  
-   Introdução aos conceitos fundamentais de APIs e comunicação entre aplicações.
+1. **n8n Docs**  
+   Documentação oficial utilizada para compreender conceitos e recursos relacionados à criação de workflows no n8n.
 
-2. **Documentação oficial do n8n**  
-   Utilizada para relacionar os conceitos estudados com a criação de workflows e integrações no n8n.
+2. **Postman Quick Start | Postman Docs**  
+   Material utilizado como apoio para compreender requisições HTTP e interação com APIs.
 
-3. **Postman Learning Center — Getting Started**  
-   Material utilizado para compreender requisições, respostas e comunicação com APIs.
+3. **What is an API? A Beginner's Guide to APIs**  
+   Fonte introdutória utilizada para compreender o conceito de API e a comunicação entre aplicações.
 
-4. **Vídeos complementares no YouTube**
-   - https://www.youtube.com/watch?v=GH6vvqpcbq
-   - https://www.youtube.com/watch?v=hYeQifquQ4o
-   - https://www.youtube.com/watch?v=g7K2qJsgQmA
-   - https://www.youtube.com/watch?v=DkV7ztrhLh8
+4. **Como usar APIs no n8n: Tutorial Completo**  
+   Material em vídeo utilizado para relacionar os conceitos de APIs com situações práticas no n8n.
 
-Os materiais foram adicionados ao NotebookLM para permitir consultas baseadas nas fontes selecionadas e apoiar a criação do miniguia.
+5. **Tutorial sobre Webhook e HTTP Request**  
+   Material complementar utilizado para compreender a utilização de Webhooks e requisições HTTP em automações.
 
 ## 🧪 Engenharia de Prompts e Cicatrizes
 
